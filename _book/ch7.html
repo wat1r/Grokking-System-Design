@@ -1,0 +1,373 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.设计YouTube或Netflix · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="ch5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ch0.html">
+            
+                <a href="ch0.html">
+            
+                    
+                    0. 系统设计面试指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    1.设计类似TinyURL的短链服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    5.设计Facebook Messager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    7.设计YouTube或Netflix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7.设计YouTube或Netflix</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="7&#x8BBE;&#x8BA1;youtube&#x6216;netflix">7.&#x8BBE;&#x8BA1;YouTube&#x6216;Netflix</h1>
+<blockquote>
+<p><strong>&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x50CF; Youtube &#x8FD9;&#x6837;&#x7684;&#x89C6;&#x9891;&#x5206;&#x4EAB;&#x670D;&#x52A1;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;/&#x67E5;&#x770B;/&#x641C;&#x7D22;&#x89C6;&#x9891;&#x3002; &#x7C7B;&#x4F3C;&#x670D;&#x52A1;&#xFF1A;netflix.com&#x3001;vimeo.com&#x3001;dailymotion.com&#x3001;veoh.com</strong> </p>
+<p><strong>&#x96BE;&#x5EA6;&#x7EA7;&#x522B;&#xFF1A;&#x4E2D;&#x7B49;</strong></p>
+</blockquote>
+<h2 id="1&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9;-youtube&#xFF1F;">1.&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9; YouTube&#xFF1F;</h2>
+<p>YouTube &#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x89C6;&#x9891;&#x5206;&#x4EAB;&#x7F51;&#x7AD9;&#x4E4B;&#x4E00;&#x3002; &#x8BE5;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x3001;&#x67E5;&#x770B;&#x3001;&#x5206;&#x4EAB;&#x3001;&#x8BC4;&#x4EF7;&#x548C;&#x53CD;&#x9988;&#x89C6;&#x9891;&#x4EE5;&#x53CA;&#x6DFB;&#x52A0;&#x5BF9;&#x89C6;&#x9891;&#x7684;&#x8BC4;&#x8BBA;&#x3002;</p>
+<h2 id="2&#x7CFB;&#x7EDF;&#x7684;&#x8981;&#x6C42;&#x548C;&#x76EE;&#x6807;">2.&#x7CFB;&#x7EDF;&#x7684;&#x8981;&#x6C42;&#x548C;&#x76EE;&#x6807;</h2>
+<p>&#x4E3A;&#x4E86;&#x8FD9;&#x4E2A;&#x7EC3;&#x4E60;&#xFF0C;&#x6211;&#x4EEC;&#x8BA1;&#x5212;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x66F4;&#x7B80;&#x5355;&#x7248;&#x672C;&#x7684; YouTube&#xFF0C;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x9700;&#x6C42;&#xFF1A;</p>
+<ul>
+<li><strong>&#x529F;&#x80FD;&#x6027;&#x9700;&#x6C42;&#xFF1A;</strong><ul>
+<li>1.&#x7528;&#x6237;&#x80FD;&#x591F;&#x4E0A;&#x4F20;&#x89C6;&#x9891;&#x3002;</li>
+<li>2.&#x7528;&#x6237;&#x80FD;&#x591F;&#x5206;&#x4EAB;&#x548C;&#x89C2;&#x770B;&#x89C6;&#x9891;&#x3002;</li>
+<li>3.&#x7528;&#x6237;&#x80FD;&#x591F;&#x6839;&#x636E;&#x89C6;&#x9891;&#x6807;&#x9898;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#x3002;</li>
+<li>4.&#x670D;&#x52A1;&#x80FD;&#x591F;&#x8BB0;&#x5F55;&#x89C6;&#x9891;&#x7684;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x70B9;&#x8D5E;&#x6570;/&#x70B9;&#x8E29;&#x6570;&#x3001;&#x603B;&#x89C2;&#x770B;&#x6B21;&#x6570;&#x7B49;&#x7B49;&#x3002;</li>
+<li>5.&#x7528;&#x6237;&#x80FD;&#x591F;&#x6DFB;&#x52A0;&#x548C;&#x67E5;&#x770B;&#x89C6;&#x9891;&#x8BC4;&#x8BBA;&#x3002;</li>
+</ul>
+</li>
+<li><strong>&#x975E;&#x529F;&#x80FD;&#x6027;&#x9700;&#x6C42;&#xFF1A;</strong><ul>
+<li>1.&#x7CFB;&#x7EDF;&#x5E94;&#x8BE5;&#x662F;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#xFF0C;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x4E0D;&#x5E94;&#x8BE5;&#x4E22;&#x5931;&#x3002;</li>
+<li>2.&#x7CFB;&#x7EDF;&#x5E94;&#x8BE5;&#x662F;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#x3002; &#x4E00;&#x81F4;&#x6027;&#x53EF;&#x80FD;&#x4F1A;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#xFF08;&#x4E3A;&#x4E86;&#x53EF;&#x7528;&#x6027;&#xFF09;; &#x5982;&#x679C;&#x7528;&#x6237;&#x6709;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x6CA1;&#x6709;&#x89C2;&#x770B;&#x89C6;&#x9891;&#xFF0C;&#x90A3;&#x5E94;&#x8BE5;&#x6CA1;&#x95EE;&#x9898;&#x3002;</li>
+<li>3.&#x7528;&#x6237;&#x5728;&#x89C2;&#x770B;&#x89C6;&#x9891;&#x65F6;&#x5E94;&#x8BE5;&#x6709;&#x5B9E;&#x65F6;&#x4F53;&#x9A8C;&#xFF0C;&#x4E0D;&#x5E94;&#x6709;&#x4EFB;&#x4F55;&#x5EF6;&#x8FDF;&#x3002;</li>
+</ul>
+</li>
+<li><strong>&#x4E0D;&#x5728;&#x8303;&#x56F4;&#x5185;&#x7684;&#x9700;&#x6C42;&#xFF1A;</strong><ul>
+<li>&#x89C6;&#x9891;&#x63A8;&#x8350;&#x3001;&#x6700;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x89C6;&#x9891;&#x3001;&#x9891;&#x9053;&#x3001;&#x8BA2;&#x9605;&#x3001;&#x7A0D;&#x540E;&#x89C2;&#x770B;&#x3001; &#x6536;&#x85CF;&#x5939;&#x7B49;</li>
+</ul>
+</li>
+</ul>
+<h2 id="3&#x5BB9;&#x91CF;&#x4F30;&#x7B97;&#x548C;&#x7EA6;&#x675F;">3.&#x5BB9;&#x91CF;&#x4F30;&#x7B97;&#x548C;&#x7EA6;&#x675F;</h2>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709; 15&#x4EBF;&#x603B;&#x7528;&#x6237;&#xFF0C;&#x5176;&#x4E2D; 8 &#x4EBF;&#x65E5;&#x6D3B;&#x7528;&#x6237;&#x3002;&#x5982;&#x679C;&#x5E73;&#x5747;&#x800C;&#x8A00;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x6BCF;&#x5929;&#x89C2;&#x770B;5&#x4E2A;&#x89C6;&#x9891;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x79D2;&#x7684;&#x603B;&#x89C6;&#x9891;&#x89C2;&#x770B;&#x91CF;&#x5C06;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-java">                                                    <span class="hljs-number">800</span>M * <span class="hljs-number">5</span> / <span class="hljs-number">86400</span> sec =&gt; <span class="hljs-number">46</span>K videos/sec
+</code></pre>
+<p>&#x73B0;&#x5728;&#x4F30;&#x7B97;&#x4E0A;&#x4F20;&#xFF1A;&#x89C2;&#x770B;&#x6BD4;&#x7387;&#x4E3A; 1:200&#xFF0C;&#x5373;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x89C6;&#x9891;&#x4E0A;&#x4F20;&#xFF0C;&#x6709; 200 &#x4E2A;&#x89C6;&#x9891;&#x89C2;&#x770B;&#xFF0C;&#x6BCF;&#x79D2;&#x4E0A;&#x4F20; 230 &#x4E2A;&#x89C6;&#x9891;&#x3002;</p>
+<pre><code class="lang-java">                                                            <span class="hljs-number">46</span>K / <span class="hljs-number">200</span> =&gt; <span class="hljs-number">230</span> videos/sec
+</code></pre>
+<p><strong>&#x5B58;&#x50A8;&#x4F30;&#x7B97;&#xFF1A;</strong>&#x5047;&#x8BBE;&#x6BCF;&#x5206;&#x949F;&#x6709; 500 &#x5C0F;&#x65F6;&#x7684;&#x89C6;&#x9891;&#x4E0A;&#x4F20;&#x5230;YouTube&#x3002;&#x5982;&#x679C;&#x5E73;&#x5747;&#x800C;&#x8A00;&#xFF0C;&#x4E00;&#x5206;&#x949F;&#x7684;&#x89C6;&#x9891;&#x9700;&#x8981; 50MB &#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF08;&#x89C6;&#x9891;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x6210;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#xFF09;&#xFF0C;&#x4E00;&#x5206;&#x949F;&#x5185;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x6240;&#x9700;&#x7684;&#x603B;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-java">                                        <span class="hljs-number">500</span> hours * <span class="hljs-number">60</span> min * <span class="hljs-number">50</span>MB =&gt; <span class="hljs-number">1500</span> GB/min&#xFF08;<span class="hljs-number">25</span> GB/sec&#xFF09;
+</code></pre>
+<p>&#x8FD9;&#x4E9B;&#x6570;&#x5B57;&#x662F;&#x5728;&#x5FFD;&#x7565;&#x89C6;&#x9891;&#x538B;&#x7F29;&#x548C;&#x590D;&#x5236;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F30;&#x7B97;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x7B97;&#x4E0A;&#x7684;&#x8BDD;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x4F30;&#x7B97;&#x3002;
+<strong>&#x5E26;&#x5BBD;&#x4F30;&#x7B97;&#xFF1A;</strong>&#x6BCF;&#x5206;&#x949F;&#x4E0A;&#x4F20; 500 &#x5C0F;&#x65F6;&#x7684;&#x89C6;&#x9891;&#x5E76;&#x5047;&#x8BBE;&#x6BCF;&#x4E2A;&#x89C6;&#x9891;&#x4E0A;&#x4F20;&#x9700;&#x8981; 10MB/&#x5206;&#x949F;&#x7684;&#x5E26;&#x5BBD;&#xFF0C;&#x6BCF;&#x5206;&#x949F;&#x5C06;&#x6709; 300GB &#x7684;&#x4E0A;&#x4F20;&#x3002;</p>
+<pre><code class="lang-java">                                            <span class="hljs-number">500</span> hours * <span class="hljs-number">60</span> min * <span class="hljs-number">10</span>MB =&gt; <span class="hljs-number">300</span>GB/min&#xFF08;<span class="hljs-number">5</span>GB/sec&#xFF09;
+</code></pre>
+<p>&#x5047;&#x8BBE;&#x4E0A;&#x4F20;&#x4E0E;&#x89C2;&#x770B;&#x6BD4;&#x7387;&#x4E3A; 1:200&#xFF0C;&#x5C06;&#x9700;&#x8981; 1TB/s &#x7684;&#x4F20;&#x51FA;&#x5E26;&#x5BBD;&#x3002;</p>
+<h2 id="4&#x7CFB;&#x7EDF;api">4.&#x7CFB;&#x7EDF;API</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; SOAP &#x6216; REST API &#x6765;&#x66B4;&#x9732;&#x670D;&#x52A1;&#x7684;&#x529F;&#x80FD;&#x63A5;&#x53E3;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4E0A;&#x4F20;&#x548C;&#x641C;&#x7D22;&#x89C6;&#x9891;&#x7684;API&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code class="lang-java">uploadVideo(api_dev_key, video_title, vide_description, tags[], category_id, default_language,recording_details, video_contents)
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>api_dev_key(string)</code>&#xFF1A;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#x7684;API&#x5F00;&#x53D1;&#x8005;&#x5BC6;&#x94A5;&#x3002;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x5206;&#x914D;&#x7684;&#x914D;&#x989D;&#x9650;&#x5236;&#x7528;&#x6237;&#x3002;</li>
+<li><code>video_title&#xFF08;string&#xFF09;</code>&#xFF1A;&#x89C6;&#x9891;&#x7684;&#x6807;&#x9898;&#x3002;</li>
+<li><code>vide_description&#xFF08;string&#xFF09;</code>&#xFF1A;&#x89C6;&#x9891;&#x7684;&#x53EF;&#x9009;&#x63CF;&#x8FF0;&#x3002;</li>
+<li><code>tags (string[])</code>&#xFF1A;&#x89C6;&#x9891;&#x7684;&#x53EF;&#x9009;&#x6807;&#x7B7E;&#x3002;</li>
+<li><code>category_id&#xFF08;string&#xFF09;</code>&#xFF1A;&#x89C6;&#x9891;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x4F8B;&#x5982;&#x7535;&#x5F71;&#x3001;&#x6B4C;&#x66F2;&#x3001;&#x4EBA;&#x7269;&#x7B49;&#x3002;</li>
+<li><code>default_language(string)</code>&#xFF1A;&#x4F8B;&#x5982;&#x82F1;&#x8BED;&#x3001;&#x666E;&#x901A;&#x8BDD;&#x3001;&#x5370;&#x5EA6;&#x8BED;&#x7B49;&#x3002;</li>
+<li><code>recording_details&#xFF08;string&#xFF09;</code>&#xFF1A;&#x5F55;&#x5236;&#x89C6;&#x9891;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>video_contents&#xFF08;stream&#xFF09;</code>&#xFF1A;&#x8981;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x3002;</li>
+</ul>
+<p><strong>&#x8FD4;&#x56DE;&#xFF1A;&#xFF08;string&#xFF09;</strong>
+&#x6210;&#x529F;&#x4E0A;&#x4F20;&#x5C06;&#x8FD4;&#x56DE; HTTP 202&#xFF08;&#x5DF2;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#xFF09;&#x5E76;&#x4E14;&#x89C6;&#x9891;&#x7F16;&#x7801;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x901A;&#x77E5;&#x7528;&#x6237;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x8BBF;&#x95EE;&#x89C6;&#x9891;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x66B4;&#x9732;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684; API&#x8BA9;&#x7528;&#x6237;&#x77E5;&#x9053;&#x4ED6;&#x4EEC;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;</p>
+<pre><code class="lang-java">searchVideo(api_dev_key, search_query, user_location, maximum_videos_to_return,
+page_token)
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>api_dev_key(string)</code>&#xFF1A;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#x7684;API&#x5F00;&#x53D1;&#x8005;&#x5BC6;&#x94A5;&#x3002;</li>
+<li><code>search_query(string)</code>&#xFF1A;&#x5305;&#x542B;&#x641C;&#x7D22;&#x8BCD;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>user_location&#xFF08;string&#xFF09;</code>&#xFF1A;&#x6267;&#x884C;&#x641C;&#x7D22;&#x7684;&#x7528;&#x6237;&#x7684;&#x53EF;&#x9009;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>maximum_videos_to_return (number)</code>&#xFF1A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x4E2D;&#x8FD4;&#x56DE;&#x7684;&#x6700;&#x5927;&#x7ED3;&#x679C;&#x6570;&#x3002;</li>
+<li><code>page_token&#xFF08;string&#xFF09;</code>&#xFF1A;&#x6B64;&#x4EE4;&#x724C;&#x5C06;&#x6307;&#x5B9A;&#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x5E94;&#x8FD4;&#x56DE;&#x7684;&#x9875;&#x9762;&#x3002;</li>
+</ul>
+<p><strong>&#x8FD4;&#x56DE;&#xFF1A;&#xFF08;JSON&#xFF09;</strong>
+ JSON&#x5305;&#x542B;&#x6709;&#x5173;&#x4E0E;&#x641C;&#x7D22;&#x67E5;&#x8BE2;&#x5339;&#x914D;&#x7684;&#x89C6;&#x9891;&#x8D44;&#x6E90;&#x5217;&#x8868;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6BCF;&#x4E2A;&#x89C6;&#x9891;&#x8D44;&#x6E90;&#x5305;&#x542B;&#x89C6;&#x9891;&#x6807;&#x9898;&#x3001;&#x7F29;&#x7565;&#x56FE;&#x3001;&#x89C6;&#x9891;&#x521B;&#x5EFA;&#x65E5;&#x671F;&#x548C;&#x89C2;&#x770B;&#x6B21;&#x6570;&#x3002;</p>
+<pre><code class="lang-java">streamVideo(api_dev_key, video_id, offset, codec, resolution)
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#xFF1A;</strong></p>
+<ul>
+<li><code>api_dev_key(string)</code>&#xFF1A;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#x7684;API&#x5F00;&#x53D1;&#x8005;&#x5BC6;&#x94A5;&#x3002;</li>
+<li><code>video_id&#xFF08;string&#xFF09;</code>&#xFF1A;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x89C6;&#x9891;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>offset&#xFF08;number&#xFF09;</code>&#xFF1A;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x4ECE;&#x4EFB;&#x4F55;&#x504F;&#x79FB;&#x91CF;&#x56DE;&#x5230;&#x89C6;&#x9891;&#xFF1B;&#x8FD9;&#x4E2A;&#x504F;&#x79FB;&#x91CF;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x4ECE;&#x4ECE;&#x89C6;&#x9891;&#x5F00;&#x59CB;&#x65F6;&#x5F80;&#x540E;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x652F;&#x6301;&#x4ECE;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x64AD;&#x653E;/&#x6682;&#x505C;&#x89C6;&#x9891;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x504F;&#x79FB;&#x91CF;&#x5B58;&#x50A8;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;&#x8FD9;&#x5C06;&#x4F7F;&#x7528;&#x6237;&#x80FD;&#x591F;&#x5728;&#x79BB;&#x5F00;&#x4EFB;&#x4F55;&#x4E00;&#x53F0;&#x8BBE;&#x5907;&#x540E;&#x7EE7;&#x7EED;&#x89C2;&#x770B;&#x89C6;&#x9891;&#x3002;</li>
+<li><code>codec&#xFF08;string&#xFF09;&amp;resolution&#xFF08;string&#xFF09;</code>&#xFF1A;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4ECE; API &#x4E2D;&#x53D1;&#x9001;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x548C;&#x5206;&#x8FA8;&#x7387;&#x4FE1;&#x606F;&#x5BA2;&#x6237;&#x7AEF;&#x652F;&#x6301;&#x4ECE;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x64AD;&#x653E;/&#x6682;&#x505C;&#x3002;&#x60F3;&#x8C61;&#x4E00;&#x4E0B;&#xFF0C;&#x60A8;&#x6B63;&#x5728;&#x7535;&#x89C6;&#x7684;Netflix&#x5E94;&#x7528;&#x89C2;&#x770B;&#x89C6;&#x9891;&#xFF0C;&#x6682;&#x505C;&#xFF0C;&#x7136;&#x540E;&#x5F00;&#x59CB;&#x5728;&#x624B;&#x673A;&#x7684; Netflix &#x5E94;&#x7528;&#x4E0A;&#x89C2;&#x770B;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x548C;&#x5206;&#x8FA8;&#x7387;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E24;&#x79CD;&#x8BBE;&#x5907;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x8FA8;&#x7387;&#x5E76;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x3002;</li>
+</ul>
+<p><strong>&#x8FD4;&#x56DE;: (STREAM)</strong></p>
+<ul>
+<li>&#x6765;&#x81EA;&#x6307;&#x5B9A;&#x504F;&#x79FB;&#x91CF;&#x7684;&#x6D41;&#x5A92;&#x4F53;&#xFF08;&#x89C6;&#x9891;&#x5757;&#xFF09;&#x3002;</li>
+</ul>
+<h2 id="5&#x9AD8;&#x9636;&#x8BBE;&#x8BA1;">5.&#x9AD8;&#x9636;&#x8BBE;&#x8BA1;</h2>
+<p>&#x5728;&#x9AD8;&#x9636;&#x7EF4;&#x5EA6;&#x4E0A;&#xFF0C;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>1.<strong>&#x5904;&#x7406;&#x961F;&#x5217;</strong>&#xFF1A;&#x6BCF;&#x4E2A;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x90FD;&#x4F1A;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x961F;&#x5217;&#x4E2D;&#x53BB;&#x6392;&#x961F;&#x7528;&#x4E8E;&#x7F16;&#x7801;&#x3001;&#x7F29;&#x7565;&#x56FE;&#x751F;&#x6210;&#x548C;&#x5B58;&#x50A8;&#x3002;</li>
+<li>2.<strong>&#x7F16;&#x7801;&#x5668;</strong>&#xFF1A;&#x5C06;&#x6BCF;&#x4E2A;&#x4E0A;&#x4F20;&#x7684;&#x89C6;&#x9891;&#x7F16;&#x7801;&#x6210;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x3002;</li>
+<li>3.<strong>&#x7F29;&#x7565;&#x56FE;&#x751F;&#x6210;&#x5668;</strong>&#xFF1A;&#x4E3A;&#x6BCF;&#x4E2A;&#x89C6;&#x9891;&#x751F;&#x6210;&#x4E00;&#x4E9B;&#x7F29;&#x7565;&#x56FE;&#x3002;</li>
+<li>4.<strong>&#x89C6;&#x9891;&#x548C;&#x7F29;&#x7565;&#x56FE;&#x5B58;&#x50A8;</strong>&#xFF1A;&#x5C06;&#x89C6;&#x9891;&#x548C;&#x7F29;&#x7565;&#x56FE;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E9B;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</li>
+<li>5.<strong>&#x7528;&#x6237;&#x6570;&#x636E;&#x5E93;</strong>&#xFF1A;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x7528;&#x6237;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x59D3;&#x540D;&#x3001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3001;&#x5730;&#x5740;&#x7B49;&#x3002;</li>
+<li>6.<strong>&#x89C6;&#x9891;&#x5143;&#x6570;&#x636E;&#x5B58;&#x50A8;</strong>&#xFF1A;&#x4E00;&#x4E2A;&#x5143;&#x6570;&#x636E;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6709;&#x5173;&#x89C6;&#x9891;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x6807;&#x9898;&#x3001;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3001;&#x4E0A;&#x4F20;&#x7528;&#x6237;&#x3001;&#x603B;&#x6D4F;&#x89C8;&#x91CF;&#x3001;&#x70B9;&#x8D5E;&#x6570;&#x3001;&#x70B9;&#x8E29;&#x6570;&#x7B49;&#x3002;&#x4E5F;&#x4F1A;&#x7528;&#x5230;&#x5B58;&#x50A8;&#x6240;&#x6709;&#x89C6;&#x9891;&#x7684;&#x8BC4;&#x8BBA;&#x3002;</li>
+</ul>
+<p><img src="img/ch7_1.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch5.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5.设计Facebook Messager">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.设计YouTube或Netflix","level":"1.5","depth":1,"previous":{"title":"5.设计Facebook Messager","level":"1.4","depth":1,"path":"ch5.md","ref":"ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch7.md","mtime":"2022-03-09T14:26:33.819Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-09T14:27:06.989Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
