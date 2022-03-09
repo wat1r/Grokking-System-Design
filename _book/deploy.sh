@@ -10,8 +10,8 @@ git add . && git commit -m "deploy" && git push
 echo "=========git build======="
 gitbook  build 
 
-echo "=========git serve======="
-gitbook serve
+#echo "=========git serve======="
+#gitbook serve
 
 
 
