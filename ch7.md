@@ -1,7 +1,7 @@
 # 7.设计YouTube或Netflix
 
-> **设计一个像 Youtube 这样的视频分享服务，用户可以上传/查看/搜索视频。 类似服务：netflix.com、vimeo.com、dailymotion.com、veoh.com** 
->
+**设计一个像 Youtube 这样的视频分享服务，用户可以上传/查看/搜索视频。 类似服务：netflix.com、vimeo.com、dailymotion.com、veoh.com** 
+
 > **难度级别：中等**
 
 ## 1.为什么选择 YouTube？
