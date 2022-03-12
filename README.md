@@ -1,10 +1,6 @@
 # Grokking-System-Design
-Grokking-System-Design译文
 
 
+> ***关注微信公众号，进群***
 
-
-
-## [1.设计类似TinyURL的短链服务](Designing a URL Shortening service like  TinyURL.md)
-
-## 5.设计Facebook Messager
+![](/img/icon/扫码_搜索联合传播样式-标准色版.jpg)
