@@ -7,6 +7,7 @@
 * [3. 设计Instagram](ch3.md)
 * [4. 设计Dropbox](ch4.md)
 * [5. 设计Facebook Messager](ch5.md)
+* [6. 设计 Twitter](ch6.md)
 * [7. 设计YouTube或Netflix](ch7.md)
 
 - [9.设计API限流器](ch9.md)
