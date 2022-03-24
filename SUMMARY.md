@@ -10,6 +10,6 @@
 * [7. 设计YouTube或Netflix](ch7.md)
 
 - [9.设计API限流器](ch9.md)
-
 - [CAP理论](ch23.md)
+- [一致性哈希](ch24.md)
 
