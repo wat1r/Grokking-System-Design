@@ -9,8 +9,9 @@
 * [5. 设计Facebook Messager](ch5.md)
 * [6. 设计 Twitter](ch6.md)
 * [7. 设计YouTube或Netflix](ch7.md)
+* [8. 设计输入提示建议](ch8.md)
+* [9. 设计API限流器](ch9.md)
 
-- [9.设计API限流器](ch9.md)
 - [SQL与NoSQL](ch22.md)
 - [CAP理论](ch23.md)
 - [一致性哈希](ch24.md)
