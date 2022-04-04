@@ -1,6 +1,12 @@
 # 0.系统设计面试指南
 
->
+> 
+
+- 英文版原版下载地址：
+  - [链接](https://pan.baidu.com/s/1acq-PZjDIbHSxnVVuKJHEw )   
+  - 提取码: fqhu
+
+
 
 ## 单位换算表
 
