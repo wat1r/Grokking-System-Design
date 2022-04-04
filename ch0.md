@@ -3,7 +3,7 @@
 > 
 
 - 英文版原版下载地址：
-  - 链接: https://pan.baidu.com/s/1acq-PZjDIbHSxnVVuKJHEw 
+  - [链接](https://pan.baidu.com/s/1acq-PZjDIbHSxnVVuKJHEw )   
   - 提取码: fqhu
 
 
