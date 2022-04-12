@@ -232,7 +232,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="ch22.html">
+        <li class="chapter " data-level="1.12" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    10. 设计 Twitter 搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch22.html">
             
                 <a href="ch22.html">
             
@@ -245,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="ch23.html">
+        <li class="chapter " data-level="1.14" data-path="ch23.html">
             
                 <a href="ch23.html">
             
@@ -258,7 +271,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="ch24.html">
+        <li class="chapter " data-level="1.15" data-path="ch24.html">
             
                 <a href="ch24.html">
             
@@ -539,7 +552,7 @@ media_ids&#xFF08;number[]&#xFF09;&#xFF1A;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x4E0E
 <h2 id="10-&#x5907;&#x4EFD;&#x548C;&#x5BB9;&#x9519;">10. &#x5907;&#x4EFD;&#x548C;&#x5BB9;&#x9519;</h2>
 <p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x662F;&#x91CD;&#x8BFB;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x5206;&#x7247;&#x8BBE;&#x5B9A;&#x591A;&#x4E2A;&#x4E8C;&#x7EA7;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x3002;&#x4E8C;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x7528;&#x4E8E;&#x8BFB;&#x6D41;&#x91CF;&#x3002;&#x6240;&#x6709;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#x9996;&#x5148;&#x8FDB;&#x5165;&#x4E3B;&#x670D;&#x52A1;&#x5668;&#x7136;&#x540E;&#x88AB;&#x590D;&#x5236;&#x5230;&#x4E8C;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8BE5;&#x6A21;&#x578B;&#x4E5F;&#x652F;&#x6301;&#x5BB9;&#x9519;&#xFF0C;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x5F53;&#x4E3B;&#x670D;&#x52A1;&#x5668;&#x5B95;&#x673A;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E8C;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x5B9E;&#x73B0;&#x5931;&#x6548;&#x8F6C;&#x79FB;&#x3002;</p>
 <h2 id="11-&#x8D1F;&#x8F7D;&#x5747;&#x8861;">11. &#x8D1F;&#x8F7D;&#x5747;&#x8861;</h2>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684; 3 &#x4E2A;&#x4F4D;&#x7F6E;&#x589E;&#x52A0;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5C42;&#xFF1A;1. &#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#xFF1B;2. &#x5728;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x548C;&#x6570;&#x636E;&#x5E93;&#x5907;&#x4EFD;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#xFF1B;3. &#x5728;&#x805A;&#x96C6;&#x670D;&#x52A1;&#x5668;&#x548C;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x3002;&#x521D;&#x59CB;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8F6E;&#x8BE2;&#x8C03;&#x5EA6;&#xFF08;Round Robin&#xFF09;&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x8FDB;&#x5165;&#x7684;&#x8BF7;&#x6C42;&#x5E73;&#x5747;&#x5730;&#x5206;&#x5E03;&#x5230;&#x5404;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F15;&#x5165;&#x65B0;&#x7684;&#x5F00;&#x9500;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x662F;&#x5982;&#x679C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5B95;&#x673A;&#x4E86;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x79FB;&#x51FA;&#x8F6E;&#x8BE2;&#xFF0C;&#x505C;&#x6B62;&#x5411;&#x5176;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x6D41;&#x91CF;&#x3002;&#x8F6E;&#x8BE2;&#x8C03;&#x5EA6;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x662F;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D1F;&#x8F7D;&#x3002;&#x5982;&#x679C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x8D1F;&#x8F7D;&#x8FC7;&#x91CD;&#x6216;&#x8005;&#x901F;&#x5EA6;&#x8FC7;&#x6162;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x5E76;&#x4E0D;&#x4F1A;&#x505C;&#x6B62;&#x5411;&#x8FD9;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x65B0;&#x8BF7;&#x6C42;&#x3002;&#x4E3A;&#x4E86;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x66F4;&#x667A;&#x80FD;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8BE5;&#x65B9;&#x6848;&#x5468;&#x671F;&#x6027;&#x5730;&#x67E5;&#x8BE2;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x8D1F;&#x8F7D;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x57FA;&#x4E8E;&#x8BE5;&#x4FE1;&#x606F;&#x8C03;&#x6574;&#x6D41;&#x91CF;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684; 3 &#x4E2A;&#x4F4D;&#x7F6E;&#x589E;&#x52A0;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5C42;&#xFF1A;1. &#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#xFF1B;2. &#x5728;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x548C;&#x6570;&#x636E;&#x5E93;&#x5907;&#x4EFD;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#xFF1B;3. &#x5728;&#x805A;&#x96C6;&#x670D;&#x52A1;&#x5668;&#x548C;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x3002;&#x521D;&#x59CB;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8F6E;&#x8BE2;&#x8C03;&#x5EA6;&#xFF08;Round Robin&#xFF09;&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x8FDB;&#x5165;&#x7684;&#x8BF7;&#x6C42;&#x5E73;&#x5747;&#x5730;&#x5206;&#x5E03;&#x5230;&#x5404;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F15;&#x5165;&#x65B0;&#x7684;&#x5F00;&#x9500;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x662F;&#x5982;&#x679C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5B95;&#x673A;&#x4E86;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x79FB;&#x51FA;&#x8F6E;&#x8BE2;&#xFF0C;&#x505C;&#x6B62;&#x5411;&#x5176;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x6D41;&#x91CF;&#x3002;&#x8F6E;&#x8BE2;&#x8C03;&#x5EA6;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x662F;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D1F;&#x8F7D;&#x3002;&#x5982;&#x679C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x8D1F;&#x8F7D;&#x8FC7;&#x91CD;&#x6216;&#x8005;&#x901F;&#x5EA6;&#x8FC7;&#x6162;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5E76;&#x4E0D;&#x4F1A;&#x505C;&#x6B62;&#x5411;&#x8FD9;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x65B0;&#x8BF7;&#x6C42;&#x3002;&#x4E3A;&#x4E86;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x66F4;&#x667A;&#x80FD;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8BE5;&#x65B9;&#x6848;&#x5468;&#x671F;&#x6027;&#x5730;&#x67E5;&#x8BE2;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x8D1F;&#x8F7D;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x57FA;&#x4E8E;&#x8BE5;&#x4FE1;&#x606F;&#x8C03;&#x6574;&#x6D41;&#x91CF;&#x3002;</p>
 <h2 id="12-&#x76D1;&#x63A7;">12. &#x76D1;&#x63A7;</h2>
 <p>&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x7684;&#x76D1;&#x63A7;&#x80FD;&#x529B;&#x662F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x6301;&#x7EED;&#x624B;&#x673A;&#x6570;&#x636E;&#x4EE5;&#x5B9E;&#x65F6;&#x4E86;&#x89E3;&#x7CFB;&#x7EDF;&#x7684;&#x8FD0;&#x884C;&#x60C5;&#x51B5;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6536;&#x96C6;&#x4EE5;&#x4E0B;&#x6570;&#x503C;&#xFF0C;&#x4E86;&#x89E3;&#x6211;&#x4EEC;&#x670D;&#x52A1;&#x7684;&#x6027;&#x80FD;&#xFF1A;</p>
 <ol>
@@ -603,7 +616,7 @@ media_ids&#xFF08;number[]&#xFF09;&#xFF1A;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x4E0E
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6. 设计 Twitter","level":"1.8","depth":1,"next":{"title":"7. 设计YouTube或Netflix","level":"1.9","depth":1,"path":"ch7.md","ref":"ch7.md","articles":[]},"previous":{"title":"5. 设计Facebook Messager","level":"1.7","depth":1,"path":"ch5.md","ref":"ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch6.md","mtime":"2022-03-29T13:55:46.770Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-04T03:29:59.119Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. 设计 Twitter","level":"1.8","depth":1,"next":{"title":"7. 设计YouTube或Netflix","level":"1.9","depth":1,"path":"ch7.md","ref":"ch7.md","articles":[]},"previous":{"title":"5. 设计Facebook Messager","level":"1.7","depth":1,"path":"ch5.md","ref":"ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch6.md","mtime":"2022-04-06T02:03:26.745Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-06T02:03:35.909Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
