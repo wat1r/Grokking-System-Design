@@ -13,6 +13,7 @@
 * [9. 设计API限流器](ch9.md)
 * [10. 设计 Twitter 搜索](ch10.md)
 * [11. 设计网络爬虫](ch11.md)
+* [12. 设计 Facebook 的新闻信息流](ch12.md)
 
 - [SQL与NoSQL](ch22.md)
 - [CAP理论](ch23.md)
