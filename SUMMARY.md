@@ -28,4 +28,4 @@
 * [24. SQL 与 NoSQL](ch24.md)
 * [25. CAP 理论](ch25.md)
 * [26. 一致性哈希](ch26.md)
-
+* [27. 长轮询 / WebSockets / 服务器发送事件](ch27.md)
